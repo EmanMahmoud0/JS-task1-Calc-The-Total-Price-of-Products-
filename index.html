@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link css style -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- link bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- link fontawesome library -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Google Web Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>JS task 1</title>
+</head>
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="javascript:void(0)"><img width="45" src="imgs/eman.jpg" alt="Eman"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">Products</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">Contact</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="text" placeholder="Search">
+                <button class="btn btn-primary" type="button">Search</button>
+            </form>
+            </div>
+        </div>
+    </nav> <!-- navbar End -->
+    <!-- Shoping bag -->
+    <div class="container pt-2 ">
+        <div class="shopping-bag d-">
+            <h5 class="shopping-title text-primary">Your Shopping Bag: </h5>
+            <div class="total-price text-danger py-1"></div>
+            <button class="btn btn-primary " id="check-out">check out</button>
+        </div>
+    </div>
+    <!-- Card section Start -->
+    <section class="container-fluid pt-3 ">
+        <div class="container">
+            <div class="row g-5 products">
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="card shadow "  style="width:280px">
+                        <img class="card-img-top" height="300" src="imgs/Arabicletterskaftan-blue_1_400x.webp" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Dress</h4>
+                            <p class="card-text">Some example text.</p>
+                            <div class="position-relative d-flex justify-content-between ">
+                                <a href="#" class="btn btn-primary show">Show Price</a>
+                                <div class="price btn btn-primary position-absolute top-0 start-0 d-none">price: 1000LE</div>
+                                <a href="#" price="1000" text="Arabic Letter Kaftan" class="btn btn-primary add-to-bag">Add to Bag</a>
+                            </div> <!-- Two btns -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="card shadow " style="width:280px">
+                        <img class="card-img-top" height="300" src="imgs/Double-FacePrintedKimono-Green_4_400x.webp" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Dress</h4>
+                            <p class="card-text">Some example text.</p>
+                            <div class="position-relative d-flex justify-content-between ">
+                                <a href="#" class="btn btn-primary">Show Price</a>
+                                <div class="price btn btn-primary position-absolute top-0 start-0 d-none">price: 1500LE</div>
+                                <a href="#" price="1500" text="double Face Kimono" class="btn btn-primary add-to-bag">Add to Bag</a>
+                            </div> <!-- Two btns -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="card shadow " style="width:280px">
+                        <img class="card-img-top" height="300" src="imgs/DSC_2416_1_400x.webp" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Dress</h4>
+                            <p class="card-text">Some example text.</p>
+                            <div class="position-relative d-flex justify-content-between ">
+                                <a href="#" class="btn btn-primary">Show Price</a>
+                                <div class="price btn btn-primary position-absolute top-0 start-0 d-none">price: 1100LE</div>
+                                <a href="#" price="1100" text="Blacl Basic Dress" class="btn btn-primary add-to-bag">Add to Bag</a>
+                            </div> <!-- Two btns -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="card shadow " style="width:280px">
+                        <img class="card-img-top" height="300" src="imgs/embroideredcolorblockkaftan-Cafe_6_400x.webp" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Dress</h4>
+                            <p class="card-text">Some example text.</p>
+                            <div class="position-relative d-flex justify-content-between ">
+                                <a href="#" class="btn btn-primary">Show Price</a>
+                                <div class="price btn btn-primary position-absolute top-0 start-0 d-none">price: 1350LE</div>
+                                <a href="#" price="1350" text="Color Kaftan" class="btn btn-primary add-to-bag">Add to Bag</a>
+                            </div> <!-- Two btns -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="card shadow " style="width:280px">
+                        <img class="card-img-top" height="300" src="imgs/embroideredcuffskaftan-Black_1_400x.webp" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Dress</h4>
+                            <p class="card-text">Some example text.</p>
+                            <div class="position-relative d-flex justify-content-between ">
+                                <a href="#" class="btn btn-primary">Show Price</a>
+                                <div class="price btn btn-primary position-absolute top-0 start-0 d-none">price: 1550LE</div>
+                                <a href="#" price="1550" text="Black Kaftan" class="btn btn-primary add-to-bag">Add to Bag</a>
+                            </div> <!-- Two btns -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="card shadow " style="width:280px">
+                        <img class="card-img-top" height="300" src="imgs/FlowySleevesChiffonDress-orange_4_400x.webp" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Dress</h4>
+                            <p class="card-text">Some example text.</p>
+                            <div class="position-relative d-flex justify-content-between ">
+                                <a href="#" class="btn btn-primary">Show Price</a>
+                                <div class="price btn btn-primary position-absolute top-0 start-0 d-none">price: 1200LE</div>
+                                <a href="#"price="1200" text="Flowy Sleeves Dress" class="btn btn-primary add-to-bag">Add to Bag</a>
+                            </div> <!-- Two btns -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="card shadow " style="width:280px">
+                        <img class="card-img-top" height="300" src="imgs/linenjumpsuitset-Black_2_400x.webp" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Dress</h4>
+                            <p class="card-text">Some example text.</p>
+                            <div class="position-relative d-flex justify-content-between ">
+                                <a href="#" class="btn btn-primary">Show Price</a>
+                                <div class="price btn btn-primary position-absolute top-0 start-0 d-none">price: 1400LE</div>
+                                <a href="#" price="1400" text="linen jumpsuitset" class="btn btn-primary add-to-bag">Add to Bag</a>
+                            </div> <!-- Two btns -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="card shadow "  style="width:280px">
+                        <img class="card-img-top" height="300" src="imgs/Stripeslinenblouse-gold_4_400x.webp" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Dress</h4>
+                            <p class="card-text">Some example text.</p>
+                            <div class="position-relative d-flex justify-content-between ">
+                                <a href="#" class="btn btn-primary">Show Price</a>
+                                <div class="price btn btn-primary position-absolute top-0 start-0 d-none">price: 1600LE</div>
+                                <a href="#" price="1600" text="linen blouse" class="btn btn-primary add-to-bag">Add to Bag</a>
+                            </div> <!-- Two btns -->
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- Row End -->
+        </div>
+    </section>
+    <!-- Card section End -->
+    <!-- pagination -->
+    <ul class="pagination justify-content-center mt-5  ">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item active"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+    <!-- link bootstrap js file -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- link js file -->
+    <script src="js/main.js"></script>
+</body>
+</html>
